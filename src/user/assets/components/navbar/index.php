@@ -9,3 +9,6 @@ echo `
   onclick="myFunction()">
   <i class="fa fa-bars"></i>
 </a>`;
+
+// Inject this inside html div tag
+/* <?php include "../assets/components/navbar";?> */

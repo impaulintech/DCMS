@@ -1,20 +1,25 @@
 <?php
 include('../../database/db_connection.php');
 
-if (isset($_POST['txtUser']) && isset($_POST['txtPass'])) {
-	$username = $_POST['txtUser'];
-	$pass = md5($_POST['txtPass']);
+if (isset($_POST['username']) && isset($_POST['password'])) {
+	$username = $_POST['username'];
+	$pass = md5($_POST['password']);
 
 	$sql = "SELECT * FROM users WHERE user_name='$username' AND user_pass='$pass' ";
 	if ($rs = $conn->query($sql)) {
 		if ($rs->num_rows > 0) {
-
-			include 'schedule_front.php';
+			echo '<script>
+      alert("Welcome Admin!")
+      window.location.href="../dashboard";
+      </script>';
 		} else {
-
-			include 'admin_front.php';
+			echo '<script>
+      alert("Wrong username or password!")
+      window.location.href="../login";
+      </script>';
 		}
 	} else {
+		echo "qqqq";
 		echo $conn->error;
 	}
 }

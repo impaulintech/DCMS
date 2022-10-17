@@ -1,29 +1,49 @@
-
 body {
   background-color: #6c88ad;
-
-  }
-  table, th, td {
-  border:1px solid white;
+}
+table,
+th,
+td {
+  border: 1px solid white;
   text-align: center;
   margin-top: 20px;
 }
-.row { height: 480px; 
-background: #41526a}
-.title
-{
+.row {
+  height: 40px;
+  background: #41526a;
+}
+.title {
   color: white;
 }
 
+.menu-btn,
+.action-btn {
+  border: none;
+  background-color: #fff;
+  height: 30px;
+  margin-left: 10px;
+  padding: 0px 15px;
+  cursor: pointer;
+}
 
-  .sidenav {
+.action-btn {
+  margin: 0px 6px;
+}
+
+.menu-btn:hover,
+.action-btn:hover {
+  background-color: #6c88ad;
+  color: #fff;
+}
+
+.sidenav {
   height: 100%;
   width: 200px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: white;
+  background-color: #41526a;
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -33,7 +53,7 @@ div.sidenav a {
   text-decoration: none;
   font-size: 25px;
   font-style: bold;
-  color: #6c88ad;
+  color: #fff;
   display: block;
 }
 
@@ -43,34 +63,23 @@ div.sidenav a:hover {
 }
 
 div.main {
-  margin-left:200px;
-  text-align: center;
+  margin-left: 100px;
 }
 div.page {
-  border-top-color: white;
-  border-bottom-color: white;
-  border-left-color: white; 
-  border-right-color: white; 
-  border-top-width: 5px;
-  border-right-width: 5px;
-  border-bottom-width:5px;
-  border-left-width: 5px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid; 
+  border: 4px solid white;
   background-color: #41526a;
   height: 100%;
-  margin-left:200px;
+  margin-left: 200px;
+  width: 85%;
 }
 div.page.search-container {
   float: right;
 }
 
-div.page input[type=text] {
+div.page input[type='text'] {
   padding: 6px;
   margin-left: 20px;
-  margin-top: 8px; 
+  margin-top: 8px;
   margin-bottom: 8px;
   font-size: 17px;
   border: none;
@@ -79,14 +88,10 @@ div.page input[type=text] {
 div.page.search-container button {
   height: 10px;
   width: 10px;
- 
 }
 
 .page.search-container button:hover {
   background: #ccc;
-}
-.search{
-
 }
 
 @media screen and (max-width: 400vw) {
@@ -95,6 +100,7 @@ div.page.search-container button {
     height: auto;
     position: relative;
   }
-  div.sidebar a {float: left;}
+  div.sidebar a {
+    float: left;
+  }
 }
-
