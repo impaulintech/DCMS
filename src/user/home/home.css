@@ -1,11 +1,10 @@
 /* Style the navigation menu */
-body{
+body {
   height: 20%;
-  background:url("clinic.png");
+  background: url('../assets/images/clinic.png');
   margin-bottom: 350px;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .navbar {
@@ -41,7 +40,7 @@ body{
   background-color: #04AA6D;
 }  */
 
-.letters h2{
+.letters h2 {
   margin: 5px;
   color: white;
   font-size: 150px;
@@ -51,27 +50,25 @@ body{
   padding-top: 90px;
 }
 
-.letters h1{
+.letters h1 {
   color: white;
   font-family: 'Alike';
   margin-top: 1px;
   font-size: 70px;
   text-align: center;
   font-weight: lighter;
-
 }
 
-.letters h3{
+.letters h3 {
   color: white;
   font-family: 'Helvetica';
   font-weight: lighter;
   text-align: center;
   margin-top: 40px;
   font-size: 30px;
-
 }
 
-.letters input{
+.letters input {
   width: 300px;
   height: 80px;
   margin-top: 80px;
@@ -98,7 +95,6 @@ body{
   padding-bottom: 20px;
 }
 
-
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -110,7 +106,9 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
+  .navbar a:not(:first-child) {
+    display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
@@ -119,7 +117,9 @@ body{
 
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;

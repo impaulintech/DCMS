@@ -9,7 +9,7 @@
 <body>
 
   <div class="sidenav">
-    <img src="img/logo1.png" height="68px">
+    <img src="img/logo.png" height="68px">
     <a class="active" href="schedule_front.php">SCHEDULE</a>
     <a href="#">PATIENTS</a>
     <a href="#">NOTES</a>
