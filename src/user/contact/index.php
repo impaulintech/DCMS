@@ -30,26 +30,24 @@
   </style>
   <title>Romero's Dental Clinic</title>
 
-  <link href="contacts.css" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet">
   </body class="body">
 
 </head>
 
 <body>
-
-
-
   <center>
     <div class="container">
       <img src="../assets/images/logo.png" style="width: 30%; margin: auto; display: block; height: 30%; position: static; margin: 45px;">
     </div>
   </center>
+
   <!-- The navigation menu -->
   <div class="navbar">
-    <a href="home.php">HOME</a>
-    <a href="About.php">ABOUT US</a>
-    <a href="contacts.php">CONTACT</a>
-    <a href="services.php">SERVICES</a>
+    <a href="../home">HOME</a>
+    <a href="../about">ABOUT US</a>
+    <a href="../contact">CONTACT</a>
+    <a href="../services">SERVICES</a>
   </div>
 
   <div class="wide">
@@ -62,21 +60,21 @@
     <center>
       <div class="row">
         <div class="column" style="background-color:#182434;">
-          <img src="../assets/images/fb.png" style="width: 20%">
+          <img src="../assets/images/socials/fb.png" style="width: 20%">
           <h1>Facebook</h1>
-          <input type="button" onclick="location.href='https://www.facebook.com/ronaldo.romero.3785';" value="MESSAGE" />
+          <input type="button" onclick="location.href='https://www.facebook.com/ronaldo.romero.3785'" value="MESSAGE" />
         </div>
 
 
         <div class="column" style="background-color:#1B293B">
-          <img src="../assets/images/gmail.png" style="width: 35%">
+          <img src="../assets/images/socials/gmail.png" style="width: 35%">
           <h1>Gmail</h1>
           <input type="button" onclick="location.href='https://www.gmail.com';" value="MESSAGE" />
         </div>
 
 
         <div class="column" style="background-color:#1e2e42;">
-          <img src="../assets/images/cp.png" style="width: 20%">
+          <img src="../assets/images/socials/cp.png" style="width: 20%">
           <h1>Contact Number</h1>
           <h3> 09164560205 </h3>
           <h3> 8364 3165 </h3>

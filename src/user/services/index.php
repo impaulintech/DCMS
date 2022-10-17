@@ -7,34 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="icon.png">
   <title>Services Dental Clinic</title>
-  <link rel="stylesheet" type="text/css" href="services.css">
+  <link rel="stylesheet" type="text/css" href="service.css">
 
 <body>
   <center>
     <div class="container">
-      <img src="../assets/images/logo.png" style="width: 30%; margin: auto; display: block; height: 30%; position: static; margin: 45px;">
+      <img src="../assets/images/logo.png"
+        style="width: 30%; margin: auto; display: block; height: 30%; position: static; margin: 45px;">
     </div>
   </center>
 
   <div class="navbar" id="myNavbar">
-    <a href="home.php">HOME</a>
-    <a href="About.php">ABOUT US</a>
-    <a href="contacts.php">CONTACT</a>
-    <a href="services.php">SERVICES</a>
+    <a href="../home">HOME</a>
+    <a href="../about">ABOUT US</a>
+    <a href="../contact">CONTACT</a>
+    <a href="../services">SERVICES</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 
   <script>
-    function myFunction() {
-      var x = document.getElementById("myNavbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
+  function myFunction() {
+    var x = document.getElementById("myNavbar");
+    if (x.className === "navbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "navbar";
     }
+  }
   </script>
 
   <div class="background">

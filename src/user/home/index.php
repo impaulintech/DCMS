@@ -15,15 +15,18 @@
 <body class="body">
   <center>
     <div class="container">
-      <img src="../assets/images/logo.png" style="width: 30%; margin: auto; display: block; height: 30%; position: static; margin: 45px;">
+      <img src="../assets/images/logo.png"
+        style="width: 30%; margin: auto; display: block; height: 30%; position: static; margin: 45px;">
+    </div>
   </center>
   </div>
+
   <!-- The navigation menu -->
   <div class="navbar" id="myNavbar">
-    <a href="home.php">HOME</a>
-    <a href="About.php">ABOUT US</a>
-    <a href="#">CONTACT</a>
-    <a href="services.php">SERVICES</a>
+    <a href="../home">HOME</a>
+    <a href="../about">ABOUT US</a>
+    <a href="../contact">CONTACT</a>
+    <a href="../services">SERVICES</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -37,28 +40,23 @@
     <input type="submit" name="booknow" value="BOOK NOW!" onClick="myFunction1()" />
 
     <script>
-      function myFunction1() {
-        window.location.href = "patientsview.php";
-      }
+    function myFunction1() {
+      window.location.href = "../appointment";
+    }
     </script>
-
     <script>
-      function myFunction() {
-        var x = document.getElementById("myNavbar");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
       }
+    }
     </script>
-
-
   </div>
-  <p style="text-align: center; color: white"> Copyright &copy;
-    <script>
-      document.write(new Date().getFullYear())
-    </script>
+  <p style="text-align: center; color: white">
+    Copyright &copy; 2022
     <br> Romero's Dental Clinic | All Rights Reserved
   </p>
 </body>
