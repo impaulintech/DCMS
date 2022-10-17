@@ -1,8 +1,36 @@
-.background{
+.background {
   height: 100%;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  padding-bottom: 5%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: #6c88ad;
+}
 
+.letters {
+  margin-bottom: 45px;
+}
+
+.cards {
+  max-width: 20%;
+  min-width: 300px;
+  max-height: 450px;
+  min-height: 450px;
+  text-align: center;
+  font-family: arial;
+  background-color: white;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-card {
+  gap: 100px;
+  width: 1200px;
+  flex-wrap: wrap;
+  display: inline-flex;
+  background-color: #6c88ad;
+  justify-content: space-around;
 }
 
 .navbar {
@@ -33,29 +61,23 @@
   display: none;
 }
 
-
-
-
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
-
 }
 
 /* Clear floats */
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
-
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
-
   }
 }
 
@@ -63,10 +85,9 @@
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
-
   }
 }
-.letters h1{
+.letters h1 {
   padding-top: 50px;
   color: #ffffff;
   text-align: center;
@@ -84,10 +105,9 @@
   background-color: white;
 }
 
-.clean{
+.clean {
   font-size: 15px;
   font-family: arial;
-
 }
 
 .price {
@@ -105,10 +125,9 @@
   margin-top: 10%;
   float: left;
   background-color: white;
-
 }
 
-.denture{
+.denture {
   font-size: 12px;
   font-family: arial;
 }
@@ -128,12 +147,10 @@
   margin-top: 8%;
   float: left;
   background-color: white;
-
 }
-.tfilling{
+.tfilling {
   font-size: 12px;
   font-family: arial;
-
 }
 
 .price2 {
@@ -150,20 +167,16 @@
   margin-top: 10%;
   float: inherit;
   background-color: white;
-
-
 }
-.tooth{
+.tooth {
   font-size: 15px;
   font-family: arial;
-
 }
 
 .price2 {
   color: light;
   font-size: 15px;
 }
-
 
 .card3 {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
@@ -176,19 +189,16 @@
   margin-top: 10%;
   float: inherit;
   background-color: white;
-
 }
-.braces{
+.braces {
   font-size: 15px;
   font-family: arial;
-
 }
 
 .price2 {
   color: light;
   font-size: 15px;
 }
-
 
 @media screen and (max-width: 500px) {
   .navbar a {
@@ -200,7 +210,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navbar a:not(:first-child) {display: none;}
+  .navbar a:not(:first-child) {
+    display: none;
+  }
   .navbar a.icon {
     float: right;
     display: block;
@@ -209,7 +221,9 @@
 
 /* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-  .navbar.responsive {position: relative;}
+  .navbar.responsive {
+    position: relative;
+  }
   .navbar.responsive a.icon {
     position: absolute;
     right: 0;
