@@ -1,0 +1,100 @@
+
+body {
+  background-color: #6c88ad;
+
+  }
+  table, th, td {
+  border:1px solid white;
+  text-align: center;
+  margin-top: 20px;
+}
+.row { height: 480px; 
+background: #41526a}
+.title
+{
+  color: white;
+}
+
+
+  .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+div.sidenav a {
+  padding: 6px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-style: bold;
+  color: #6c88ad;
+  display: block;
+}
+
+div.sidenav a:hover {
+  background-color: #6c88ad;
+  color: white;
+}
+
+div.main {
+  margin-left:200px;
+  text-align: center;
+}
+div.page {
+  border-top-color: white;
+  border-bottom-color: white;
+  border-left-color: white; 
+  border-right-color: white; 
+  border-top-width: 5px;
+  border-right-width: 5px;
+  border-bottom-width:5px;
+  border-left-width: 5px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid; 
+  background-color: #41526a;
+  height: 100%;
+  margin-left:200px;
+}
+div.page.search-container {
+  float: right;
+}
+
+div.page input[type=text] {
+  padding: 6px;
+  margin-left: 20px;
+  margin-top: 8px; 
+  margin-bottom: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+div.page.search-container button {
+  height: 10px;
+  width: 10px;
+ 
+}
+
+.page.search-container button:hover {
+  background: #ccc;
+}
+.search{
+
+}
+
+@media screen and (max-width: 400vw) {
+  .sidebar {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+  div.sidebar a {float: left;}
+}
+

@@ -1,0 +1,133 @@
+/* Style the navigation menu */
+body{
+  height: 20%;
+  background:url("clinic.png");
+  margin-bottom: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  overflow: auto;
+  font-family: Alike;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 10px;
+  color: #6c88ad;
+  text-decoration: none;
+  font-size: 20px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #1e2e42;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+/* Style the current/active link
+.navbar a.active {
+  background-color: #04AA6D;
+}  */
+
+.letters h2{
+  margin: 5px;
+  color: white;
+  font-size: 150px;
+  font-family: 'Yesteryear';
+  font-weight: normal;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.letters h1{
+  color: white;
+  font-family: 'Alike';
+  margin-top: 1px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: lighter;
+
+}
+
+.letters h3{
+  color: white;
+  font-family: 'Helvetica';
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 30px;
+
+}
+
+.letters input{
+  width: 300px;
+  height: 80px;
+  margin-top: 80px;
+  top: 50%;
+  left: 50%;
+  position: relative;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: none;
+  font-family: 'Alpha Slab One';
+  color: #6c88ad;
+  font-size: 30px;
+  border-radius: 40px;
+}
+
+.letters input:hover {
+  background-color: #1e2e42;
+  color: #ffffff;
+}
+
+.iframes {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

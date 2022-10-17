@@ -1,0 +1,88 @@
+.wide {
+  background-color: #6c88ad;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+
+.get {
+ color: #ffffff;
+}
+
+.column {
+  padding-top: 2%;
+  color: white;
+
+}
+
+.column h3 {
+  font-weight: lighter;
+}
+
+.column input {
+  width: 40%;
+  height: 20%;
+  margin-left: 40%;
+  margin-top: 50px;
+  position: relative;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: none;
+  font-family: 'Alpha Slab One';
+  color: #6c88ad;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+.column input:hover {
+  background-color: #6c88ad;
+  color: #1e2e42 ;
+}
+
+.bg {
+  height: 1000px;
+	width: 95%;
+  background-color: #1e2e42;
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+  font-family: Alike;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 10px;
+  color: #6c88ad;
+  text-decoration: none;
+  font-size: 20px;
+  width: 23%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #1e2e42;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
