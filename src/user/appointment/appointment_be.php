@@ -51,7 +51,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
     $query = mysqli_query($conn, $sql);
     print_r($query);
     if ($query) {
-      echo "REGISTERED SUCCESSFULLY!";
+      echo '<script>
+      alert("REGISTERED SUCCESSFULLY!")
+      window.location.href="../home";
+      </script>';
     } else {
       echo $query;
     }
