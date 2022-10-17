@@ -1,16 +1,7 @@
 <?php
-$server="localhost"; 
-$user="root";
-$pass="";
-$db_name="dbdcms";
-$conn = new mysqli ($server, $user, $pass, $db_name);
+include('../../database/db_connection.php');
 
-if ($conn->connect_error){
-	die ('Connect Failed'.$conn->connect_error);
-}
+$sqlName = "SELECT * FROM patient";
 
-$sqlName="SELECT * FROM patient";
 
-	
-	include 'schedule.php';
-?>
+include 'schedule.php';

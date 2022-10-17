@@ -1,5 +1,5 @@
 <?php
-include './src/database/db_connection.php';
+include('../../database/db_connection.php');
 
 if (isset($_POST['txtUser']) && isset($_POST['txtPass'])) {
 	$username = $_POST['txtUser'];

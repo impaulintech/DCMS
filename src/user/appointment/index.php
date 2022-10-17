@@ -1,15 +1,3 @@
-<!---<?php
-      $naming = "";
-      $age1 = "";
-      $cellphone = "";
-      $email1 = "";
-      $add1 = "";
-      $dental = "";
-      $date1 = "";
-      $time1 = "";
-      $description = "";
-      ?> ---->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -40,46 +28,44 @@
     <div class="background">
       <div class="letters">
         <h2>Patients' Appointment </h2>
-
       </div>
       <div class="box">
         <label class="text1"> Please be advised that this is not yet a confirmed appointment.</label> <br>
         <label class="text2">Our Clinic will text/email you to finalize your appointment</label>
-        <br> <br>
-
-        <form action="formpatient.php" method="post">
+        <br><br>
+        <form action="appointment_be.php" method="post">
           <div>
             <label class="name">Name (Lastname, Firstname): </label>
-            <input class="naming" type="text" name="txtname" placeholder="Enter your Name" required>
+            <input class="naming" type="text" name="fullName" placeholder="Enter your Name" required>
           </div>
           <div>
             <label class="age">Age: </label>
-            <input class="age1" type="age" name="txtage" placeholder="Enter your Age" required>
+            <input class="age1" type="age" name="age" placeholder="Enter your Age" required>
           </div>
           <div>
             <label class="cp">Cellphone Number: </label>
-            <input class="cellphone" type="contactno" name="txtcell" placeholder="Enter you number" required>
+            <input class="cellphone" type="contactno" name="phone" placeholder="Enter you number" required>
           </div>
           <div>
             <label class="email">Email: </label>
-            <input class="email1" type="email" name="txtemail" placeholder="Enter your Email" required>
+            <input class="email1" type="email" name="email" placeholder="Enter your Email" required>
           </div>
           <div>
             <label class="address">Address: </label>
-            <input class="add1" type="address" name="txtadd" placeholder="Enter your Address" required>
+            <input class="add1" type="address" name="address" placeholder="Enter your Address" required>
           </div>
           <div>
             <label class="date">Date: </label>
-            <input class="date1" type="date" name="txtdate" required>
+            <input class="date1" type="date" name="date" required>
           </div>
           <div>
             <label class="time">Time: </label>
-            <input class="time1" type="time" name="txttime" required>
+            <input class="time1" type="time" name="time" required>
           </div>
           <div class="input-box">
             <span class="services"> SERVICES AND ESTIMATED PRICE </span>
             <select class="dental" name="option">
-              <option value="" disabled selected>Choose your option</option>
+              <option value="0" disabled selected>Choose your option</option>
               <option value="1">Cleaning Php 600</option>Dentures Php 7000
               <option value="2">Dentures Php 7000</option>
               <option value="3">Minor Surgery Php 600</option>

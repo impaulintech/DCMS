@@ -3,13 +3,13 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="schedule.css">
+  <link rel="stylesheet" href="dashboard.css">
 </head>
 
 <body>
 
   <div class="sidenav">
-    <img src="img/logo.png" height="68px">
+    <img src="../assets/images/header.png" height="68px">
     <a class="active" href="schedule_front.php">SCHEDULE</a>
     <a href="#">PATIENTS</a>
     <a href="#">NOTES</a>
