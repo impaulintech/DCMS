@@ -1,4 +1,3 @@
-<?php include('./dashboard_be.php'); ?>
 <!DOCTYPE html>
 <html>
 
@@ -37,59 +36,24 @@
           <td class="title">STATUS</td>
           <td class="title">ACTION</td>
         </tr>
-        <tbody id="app">
+        <tbody>
+          <?php include('./dashboard_be.php'); ?>
         </tbody>
       </table>
     </div>
   </div>
 
   <script>
-  let userData = <?php echo json_encode($approved_list); ?>;
-  let target = document.querySelector('#app');
-  let userDataArray = userData;
-
-  target.innerHTML = userDataArray.map(function(data, index) {
-    const {
-      name,
-      dt: date,
-      description,
-      dental_procedure,
-      status,
-      slot_id
-    } = data;
-
-    return `
-    <tr>
-      <td class='row'>${slot_id}</td>
-      <td class='row'>${name}</td>
-      <td class='row'>${date}</td>
-      <td class='row'>${dental_procedure}</td>
-      <td class='row'>${description}</td>
-      <td class='row'>${status}</td>
-      <td class='row' style='width: 300px;'>
-        <from method="POST">
-          <input type='submit' value='Approve' name='update' onclick='approveSchedule(event)' class='menu-btn' />
-          <input type='submit' value='Delete' name='delete' onclick='deleteSchedule(${index})' class='action-btn' />
-        </from>
-      </td>
-    </tr>
-    `;
-  }).join("");
-
   function refreshState() {
     window.location.reload();
   }
 
   function approveSchedule(event) {
-
-    console.log('approve', event);
+    console.log("approv")
   }
 
-  function deleteSchedule(id) {
-    console.log('delete', id);
-    setTimeout(() => {
-      window.location.reload();
-    }, 1500)
+  function deleteSchedule(event) {
+    console.log('delete');
   }
 
   function approvedAppointment() {
@@ -104,16 +68,3 @@
 </body>
 
 </html>
-
-<!-- <tr>
-  <td class="row">1</td>
-  <td class="row">Test User</td>
-  <td class="row">01/01/01</td>
-  <td class="row">Dental</td>
-  <td class="row">₱ 150</td>
-  <td class="row">Pending</td>
-  <td class="row" style="width: 300px;">
-    <button onclick="approveSchedule()" class="menu-btn">Approve</button>
-    <button onclick="deleteSchedule()" class="action-btn">Delete</button>
-  </td>
-</tr> -->
