@@ -17,16 +17,21 @@
     <h2 style="font-size:3vw;color: white; margin-left: 100px; text-align:center">SCHEDULE LIST</h2>
     <div class="page">
       <div class="search-container">
-        <input type="text" placeholder="Search.." name="search">
-        <button class="menu-btn">Search</button>
-        <button class="menu-btn" onclick="approvedAppointment()">Approved Appointments</button>
-        <button class="menu-btn" onclick="logout()">Logout</button>
-        <button onclick="refreshState()" class="menu-btn"
-          style="float: right; margin-top: 9px; margin-right: 9px">Refresh</button>
+        <form method="POST">
+          <input type="text" placeholder="Search.." name="search">
+          <button class="menu-btn">Search</button>
+          <input type="submit" class="menu-btn" name="all" value="All" />
+          <!-- <input type="submit" class="menu-btn" name="approved" value="Approved" />
+          <input type="submit" class="menu-btn" name="pending" value="Pending" /> -->
+          <div style="float: right; margin-top: 9px; margin-right: 9px">
+            <button class="menu-btn" onclick="refreshState()">Refresh</button>
+            <button class="menu-btn" onclick="logout(event)">Logout</button>
+          </div>
+        </form>
       </div>
     </div>
     <div>
-      <table style="width:85%; margin-left: 200px;color:white">
+      <table style="width:85%; margin-left: 200px;color:white;background: #12233b;">
         <tr>
           <td class="title">SLOTS</td>
           <td class="title">PATIENT NAME</td>
@@ -49,18 +54,17 @@
   }
 
   function approveSchedule(event) {
-    console.log("approv")
+    window.location.href = "../login";
   }
 
   function deleteSchedule(event) {
     console.log('delete');
   }
 
-  function approvedAppointment() {
-    console.log('Go to approved appointments');
-  }
+  function approvedAppointment() {}
 
-  function logout() {
+  function logout(event) {
+    event.preventDefault();
     window.location.href = "../login";
   }
   </script>
